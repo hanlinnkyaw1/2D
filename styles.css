@@ -1,0 +1,97 @@
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header style */
+        .header {
+            background-color: rgb(1, 40, 80);
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            color: whitesmoke;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+
+        /* Main number display */
+        .number-display {
+            font-weight: bold;
+            text-align: center;
+            font-size: 4rem;
+            color: deepskyblue;
+            margin-top: 20px;
+        }
+
+        .update-time {
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+            margin-top: 10px;
+        }
+        
+        /* Blinking effect */
+    @keyframes blink {
+      60% {
+      opacity: 0;
+     }
+    }
+
+    .blinking {
+      animation: blink 4s infinite;
+    }
+
+        /* main boxes */
+        .box {
+            background-color: #111;
+            color: white;
+            padding: 10px;
+            margin: 20px 10px;
+            border-radius: 8px;
+            text-align: center;
+            height: auto;
+            
+        }
+
+        .box .time {
+            font-size: 16px;
+        }
+        .small-box{
+          display: flex;
+          justify-content: space-evenly;
+        }
+        
+        .small-box div{
+          margin: 5px;
+          font-size: 1.2rem;
+          color: gray;
+          
+        }
+        .small-box .set, .value{
+          font-size: 1rem;
+          color: white;
+        }
+
+        .date{
+          font-size: 1.2rem;
+        }
+        
+        .date p{
+          color: red;
+        }
+        
+         .result{
+          margin: 10px;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+ 
+ 
+ footer{
+   text-align: center;
+ }
