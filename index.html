@@ -3,57 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="canonical" href="https://myanmar2d3d.netlify.app/" />  
-  <meta name="google-site-verification" content="googlecdf377dc4fe2192f" />
   <title>Myanmar 2D 3D Lottery Results</title>
+  <link rel="canonical" href="https://myanmar2d3d.netlify.app/" /> 
   <meta name="description" content="Get the latest Myanmar 2D and 3D lottery results, updated daily.">
-  <meta name="keywords" content="Myanmar 2D, Myanmar 3D, lottery, results, 2D3D" /> 	
+  <meta name="keywords" content="Myanmar 2D, Myanmar 3D, lottery, results, 2D3D">
   <link rel="stylesheet" href="styles.css" />
+  
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "url": "https://myanmar2d3d.netlify.app",
-  "logo": "https://myanmar2d3d.netlify.app/logo.png"
-}
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://myanmar2d3d.netlify.app",
+        "logo": "https://myanmar2d3d.netlify.app/logo.png"
+      }
 	</script>
+  <link rel="icon" href="logo.png" type="image/png">
+
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header">
-        <h1>Myanmar 2D</h1>
-    </div>
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div> 
+
+  <!-- Main Content -->
+  <main>
+  	<div class="number-display blinking" id="live-twod">--</div>
+  	<div class="update-container">
+  	<span id="mark">&#10004;</span>
+    <div class="update-time" id="update-time"> Loading...</div>
+  	</div>
     
-    <div id="root"></div>
+    <div id="ads1" class="ads"> </div>
     
+    <!-- Morning Round -->
+    <section class="box">
+      <div class="small-box">
+        <div>SET : <span class="set" id="set1">--</span></div>
+        <div>Value : <span class="value" id="value1">--</span></div>
+      </div>
+      <div class="date">
+        <p id="date1">--</p>
+        12:01 PM
+      </div>
+      <div class="result" id="twod1">2D : --</div>
+    </section>
     
+    <!-- Evening Round -->
+    <section class="box">
+      <div class="small-box">
+        <div>SET : <span class="set" id="set2">--</span></div>
+        <div>Value : <span class="value" id="value2">--</span></div>
+      </div>
+      	<div class="date">
+        	<p id="date2">--</p>
+      	 4:30 PM </div>
+    		<div class="result" id="twod2">2D : --</div>
+    </section>
+    
+  <div class="lottery-table-container">
+      <table class="lottery-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Modern</th>
+            <th>Internet</th>
+            <th>TW</th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <td class="time-label">9:30 AM</td>
+          <td class="modern-morning" id="modern-morning">--</td>
+          <td class="interne-morning" id="internet-morning">--</td>
+          <td class="tw-morning">--</td>
+        </tr>
+        <tr>
+        <td class="time-label">2:00 PM</td>
+        <td class="modern-evening" id="modern-evening">--</td>
+        <td class="internet-evening" id="internet-evening">--</td>
+        <td class="tw-evening">--</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-<script src="main.js"></script>
-
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'a18afc084310f7ccf5ba8fb925340a70',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/a18afc084310f7ccf5ba8fb925340a70/invoke.js"></script>
-
-
-<script type="text/javascript">
-	atOptions = {
-		'key' : '339bde0cf507b1f7b06b44a0b52bcb6d',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/339bde0cf507b1f7b06b44a0b52bcb6d/invoke.js"></script>
-
+</main>
+  
+    
+  <!-- Ads will be injected here -->
+  <div class="ads" id="ads2">
+  </div>
+  
+  
+  <script src="script.js"></script> 
+  <!-- <script src="main.js"></script> -->
+  
 </body>
 </html>

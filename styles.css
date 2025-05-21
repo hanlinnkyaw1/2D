@@ -26,18 +26,29 @@
             font-size: 4rem;
             color: deepskyblue;
             margin-top: 20px;
+            text-shadow: 1px 0px 1px darkgrey;
         }
-
+        
+        .update-container{
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+        }
+        
+        #mark{
+          color: seagreen;
+          
+        }
         .update-time {
-            text-align: center;
             font-size: 14px;
-            color: gray;
-            margin-top: 10px;
+            color: black;
+            margin-top: 5px;
+            font-weight: bold;
         }
         
         /* Blinking effect */
     @keyframes blink {
-      60% {
+      50% {
       opacity: 0;
      }
     }
@@ -55,7 +66,7 @@
             border-radius: 8px;
             text-align: center;
             height: auto;
-            
+            box-shadow: 1.5px 1px 1px gray;
         }
 
         .box .time {
@@ -91,7 +102,88 @@
           font-weight: bold;
         }
  
- 
- footer{
-   text-align: center;
- }
+ .loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-size: 1.2rem;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top-color: deepskyblue;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lottery-table-container {
+  margin: 0 auto;
+  width: 95vw;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(50, 160, 200, 1);
+  border: 2px solid cyan;
+  font-family: sans-serif;
+}
+
+.lottery-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #0a1128; /* Dark blue background */
+  color: #f8f9fa; /* Light gray text */
+  text-align: center;
+}
+
+.lottery-table th,
+.lottery-table td {
+  padding: 14px 10px;
+  border-bottom: 1px solid #1e293b; /* Darker blue border */
+}
+
+.lottery-table th {
+  font-weight: 600;
+  text-transform: uppercase; 
+  letter-spacing: 0.05em; 
+  background-color: #1e293b;
+}
+
+.lottery-table td.time-label {
+  font-weight: bold;
+  color: #64ffda; 
+}
+
+.lottery-table tbody tr:nth-child(even) {
+  background-color: #161d2e; 
+}
+
+.lottery-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.lottery-table td div {
+  font-size: 1.2em; 
+  font-weight: bold;
+}
+
+.ads{
+  display: flex;
+  justify-content: center;
+}
